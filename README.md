@@ -13,6 +13,25 @@ Currently supported: **macOS, Apple Silicon (M1/M2/M3/M4)**.
 3. Use the SHA256 checksum published on that release to verify the download.
 4. Extract the tar.gz and follow the instructions in the `quickstart.txt`.
 
+## Features
+DoorDash CLI functionality will become available to you once you have gotten off the waitlist and have signed into a DoorDash account via dd-cli login.
+
+The following subset of DoorDash features are currently supported:
+- Addresses: list saved addresses, set the default address (must be a previously registered address)
+- Payment methods: list saved payment methods (currently card-only)
+- Store Search: search for stores (restaurant, grocery, and more) based on free-form query, find nearby stores, view store details
+- Menu Search: browse menus/catalogs, search for specific items, view item details
+- Cart management: list active carts, add/remove items, view cart contents, delete cart
+  - Cart Types: Individual or Group
+- Shopping list: Build cart from a shopping list
+- Promotions: list eligible campaign promos for a store, apply/remove promo code
+- Work benefits: apply company/employee payment budgets
+- Ordering: preview order pricing, set tip amount, apply credits, submit orders (or get a browser checkout URL as fallback), check payment status, recreate a past order
+  - Fulfillment modes: Pick-up or Delivery
+  - Scheduling: ASAP or Schedule Ahead
+  - Delivery Speed: Priority/Express or Standard
+- Order history: view past orders and fetch receipts
+
 ## Security Notice
 
 This binary is distributed as-is, without warranty of any kind. By downloading and executing it, you acknowledge that you are running third-party software obtained over the internet and assume all associated risks. We strongly recommend verifying the integrity of the downloaded file before use by comparing it against the published checksum associated with the release. Do not proceed if the computed checksum does not match.
