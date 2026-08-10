@@ -4,12 +4,12 @@ DoorDash CLI (`dd-cli`) is a terminal tool for ordering from DoorDash — search
 
 > Waitlist-only. Full functionality requires an approved account. Join the waitlist here: https://forms.gle/gvCQZvu9C1EKA6aM6
 
-Currently supported: **macOS, Apple Silicon (M1/M2/M3/M4)**.
+Currently supported: **macOS, Apple Silicon (M1/M2/M3/M4)** and **Linux, x86_64**.
 
 ## Download
 
 1. Go to the [Releases page](https://github.com/doordash-oss/doordash-cli/releases) and open the latest release.
-2. Download the `dd-cli-v<version>-darwin-arm64.tar.gz` asset.
+2. Download the asset for your platform: `dd-cli-v<version>-darwin-arm64.tar.gz` (macOS, Apple Silicon) or `dd-cli-v<version>-linux-amd64.tar.gz` (Linux, x86_64).
 3. Use the SHA256 checksum published on that release to verify the download.
 4. Extract the tar.gz and follow the instructions in the `quickstart.txt`.
 
@@ -40,6 +40,8 @@ To compute the checksum of your download:
 
 ```bash
 shasum -a 256 dd-cli-v<version>-darwin-arm64.tar.gz
+# or, on Linux:                                                                                                                                          
+shasum -a 256 dd-cli-v<version>-linux-amd64.tar.gz   
 ```
 
 ## Try it
