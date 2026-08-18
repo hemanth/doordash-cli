@@ -9,7 +9,7 @@ Currently supported: **macOS, Apple Silicon (M1/M2/M3/M4)** and **Linux, x86_64*
 ## Download
 
 1. Go to the [Releases page](https://github.com/doordash-oss/doordash-cli/releases) and open the latest release.
-2. Download the asset for your platform: `dd-cli-v<version>-darwin-arm64.tar.gz` (macOS, Apple Silicon) or `dd-cli-v<version>-linux-amd64.tar.gz` (Linux, x86_64).
+2. Download the asset for your platform: `dd-cli-v<version>-darwin-arm64.tar.gz` (macOS, Apple Silicon) or `dd-cli-v<version>-linux-amd64.tar.gz` (glibc-based Linux - Debian 11+, Ubuntu 20.0+, RHEL 9, Amazon Linux 2023, and similar).
 3. Use the SHA256 checksum published on that release to verify the download.
 4. Extract the tar.gz and follow the instructions in the `quickstart.txt`.
 
@@ -51,3 +51,6 @@ dd-cli --help
 dd-cli search --query "ramen near me"
 dd-cli order history
 ```
+
+## Headless Installation
+On headless Linux (containers, cloud sandboxes, CI) with no OS keychain, skip `dd-cli login` and instead set the `DD_CLI_ACCESS_TOKEN` environment variable to a token produced by `dd-cli export-token` on a machine where you have already signed in.
